@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Pizzapontun</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Panta Pizzu</h1>
+<h3>Vinsamlegast fyltu út í eftirfarandi</h3>
+<br>
+<form method="post" action="pizzapontun.php">
+<div><label class="nafn">Nafn</label>
+<input	type="text" name="fname">
+</div>
+<div><label class="eftirnafn">Eftirnafn</label>
+<input	type="text" name="lname">
+</div>
+<div><label class="simi">Símanúmer</label>
+<input	type="text" name="phone">
+</div>
+<div><label class="netfang">Netfang</label>
+<input	type="text" name="email">
+</div>
+<br>
+<h2>Stærð Pizzu</h2>
+<h3>Hakaðu við tommur</h3>
+
+<p>
+	<input class="radio" type="radio" name="tommur" value="10" checked="">10 Tommur - 1000Kr.
+	<br>
+	<input class="radio" type="radio" name="tommur" value="12">12 Tommur - 1500r.
+	<br>
+	<input class="radio" type="radio" name="tommur" value="16">16 Tommur - 2000Kr.
+</p>
+
+<br>
+<h2>Áleggstegundir</h2>
+<h3>Veldu áleggstegund</h3>
+
+<p>
+	<input class="check" type="checkbox" name="alegg[]" value="Piparostur">Piparostur - 200Kr.<br>
+	<input class="check" type="checkbox" name="alegg[]" value="Pepperóní">Pepperóní - 200Kr.<br>
+	<input class="check" type="checkbox" name="alegg[]" value="Ólívur">Ólívur - 200Kr.<br>
+</p>
+
+<button type="submit">Panta!</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Lato|Montserrat&subset=greek);
+
+body{
+	background-image: url("bila_bakrunnur.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 100%;
+
+}
+
+.hreyfilina
+{
+	border-bottom: solid white 1px;
+}
+
+.mainord
+{
+	font-size: 400%;
+	text-align: center;
+}
+
+h1
+{
+	font-family: "Montserrat";
+	color: white;
+	font-style: bold;
+	font-weight: 18;
+	font-size: 100;
+	letter-spacing: 3.5;
+	text-shadow: 0px 0px 4px black;
+	margin-bottom: 40px;
+}
+
+.titill
+{
+	animation-name: birtatexta;
+	animation-duration: 6s;
+}
+
+
+.secondord
+{
+	font-size: 170%;
+	text-align: center;
+}
+
+h4
+{
+	font-family: "Open Sans";
+	text-shadow: 0px 0px 1px white;
+	color: white;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 0.4em;
+	font-size: 32;
+}
+
+h4:hover
+{
+	text-shadow: 0px 0px 7px white;
+	cursor: pointer;
+}
+
+h2
+{
+	color: white;
+	text-shadow: 0px 0px 1px white;
+	text-align: center;
+	font-family: "Lato";
+	font-weight: 0.5;
+	font-size: 34;
+	letter-spacing: 1.8;
+}
+
+em a
+{
+	position: relative;
+	padding-bottom: 3px;
+}
+
+em a::before
+{
+	content: "";
+	position: absolute;
+	left: -10%;
+	bottom: 0;
+	height: 1px;
+	width: 0%;
+	border-bottom: 1px solid white;
+	transition: width 0.7s ease;
+}
+
+em a:hover::before
+{
+	width: 120%;
+}
+
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+	padding: 10px;
+	background-color: #FFAA00;
+	border-radius: 20px;
+	background: rgb(60, 60, 60);
+    background: rgba(60, 60, 60, 0.6);
+    border: solid 1px #646464;
+    box-shadow: 1px 1px 4px #2A2A2A;
+
+    animation-name: birtatexta;
+    animation-duration: 6s;
+}
+
+.notendanafn
+{
+	margin-right: 8px;
+	text-align: center;
+	font-family: "Lato";
+	margin-left: 30px;
+	font-size: 25;
+	opacity: 1;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+}
+
+.lykilord
+{
+	margin-right: 65px;
+	margin-left: 30px;
+	text-align: center;
+	font-family: "Lato";
+	font-size: 25	;
+	opacity: 1;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+}
+
+input
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Lato";
+	height: 30px;
+	width: 200;
+	opacity: 1;
+	margin-bottom: 20px;
+	font-size: 20;
+}
+
+.nyskra
+{
+	text-decoration: none;
+	color: #FFEDB2;
+	font-family: "Lato"
+}
+
+.nyskra:hover
+{
+	text-shadow: 0px 0px 1px #FFDBBC;
+}
+
+form
+{
+	margin-bottom: 0px;
+}
+
+.welcome
+{
+	font-family: "Montserrat";
+	font-size: 1;
+	font-weight: 8;
+	opacity: 0;
+
+	animation-name: felatexta;
+	animation-duration: 4s;
+}
+
+.velkomin
+{
+	width: 935px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: -250px;
+}
+
+@keyframes birtatexta
+{
+	0% {opacity: 0;}
+	66%{opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes felatexta
+{
+	0% {opacity: 0;}
+	1%{font-size: 160;}
+	20%{opacity: 0;}
+	40%{opacity: 1;}
+	75%{opacity: 1;}
+	99%{font-size: 160;}
+    100% {opacity: 0;}
+}
+
+@media screen and (max-width: 1570px) {
+    
+
+    input
+    {
+		width: 80%;
+		margin-top: 9px;
+    }
+
+    .n1
+    {
+    	text-align: center;
+    }
+
+    .p1
+    {
+		text-align: center;
+    }
+
+    .notendanafn
+    {
+    	margin: 0;
+    	font-family: "Lato";
+    }
+
+    .lykilord
+    {
+    	margin: 0;
+    	font-family: "Lato";
+    }
+
+    .container
+	{
+		width: 27%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.container
+	{
+		width: 60%;
+	}
+
+	h1
+	{
+		font-size: 75
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.container
+	{
+		width: 90%;
+	}
+
+	h1
+	{
+		font-size: 51
+	}
+
+	body
+	{
+		max-width: 400px;
+	}
+}

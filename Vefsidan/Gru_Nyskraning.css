@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Lato|Montserrat&subset=greek);
+
+
+body{
+	background-image: url("bila_bakrunnur.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 100%;
+
+}
+
+.hreyfilina
+{
+	border-bottom: solid white 1px;
+}
+
+.mainord
+{
+	font-size: 400%;
+	text-align: center;
+}
+
+h1
+{
+	font-family: "Montserrat";
+	color: white;
+	font-style: bold;
+	font-weight: 18;
+	font-size: 100;
+	letter-spacing: 3.5;
+	text-shadow: 0px 0px 4px black;
+	margin-bottom: 40px;
+}
+
+
+.secondord
+{
+	font-size: 170%;
+	text-align: center;
+}
+
+h4
+{
+	font-family: "Open Sans";
+	text-shadow: 0px 0px 1px white;
+	color: white;
+	margin: 0;
+	margin-top: 20px;
+}
+
+h4:hover
+{
+	text-shadow: 0px 0px 7px #DBFFEE;
+	cursor: pointer;
+}
+
+h2
+{
+	color: white;
+	text-shadow: 0px 0px 1px white;
+	text-align: center;
+	font-family: "Lato";
+	font-weight: 0.5;
+	font-size: 30;
+	letter-spacing: 1.75;
+}
+
+em a
+{
+	position: relative;
+	padding-bottom: 3px;
+}
+
+em a::before
+{
+	content: "";
+	position: absolute;
+	left: -10%;
+	bottom: 0;
+	height: 1px;
+	width: 0%;
+	border-bottom: 1px solid white;
+	transition: width 0.7s ease;
+}
+
+em a:hover::before
+{
+	width: 120%;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+	padding: 10px;
+	background-color: #FFAA00;
+	border-radius: 20px;
+	background: rgb(60, 60, 60);
+    background: rgba(60, 60, 60, 0.6);
+}
+.notendanafn{
+	margin-right: 5px;
+	text-align: center;
+	font-family: "Lato";
+	margin-left: 35px;
+	font-size: 20;
+	opacity: 1;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+}
+
+.nafn
+{
+	margin-right: 38px;
+	text-align: center;
+	font-family: "Lato";
+	margin-left: 35px;
+	font-size: 20;
+	opacity: 1;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+}
+
+.lykilord
+{
+	margin-right: 50px;
+	margin-left: 35px;
+	text-align: center;
+	font-family: "Lato";
+	font-size: 20;
+	opacity: 1;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+}
+
+.netfang
+{
+	margin-right: 49.5px;
+	margin-left: 35px;
+	text-align: center;
+	font-family: "Lato";
+	font-size: 20;
+	opacity: 1;
+	color: white;
+	text-shadow: 0px 0px 1px white;	
+}
+
+input
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Lato";
+	height: 30px;
+	width: 225;
+	opacity: 1;
+	margin-bottom: 20px;
+	font-size: 20;
+}
+
+
+@media screen and (max-width: 1560px) {
+    
+
+    input
+    {
+		width: 80%;
+		margin-top: 9px;
+    }
+
+    .n1
+    {
+    	text-align: center;
+    }
+
+    .n2
+    {
+    	text-align: center;
+    }
+
+    .n3
+    {
+    	text-align: center;
+    }
+
+    .l1
+    {
+		text-align: center;
+    }
+
+    .notendanafn
+    {
+    	margin: 0;
+    	font-family: "Lato";
+    }
+
+    .nafn
+    {
+    	margin: 0;
+    	font-family: "Lato";
+    }
+
+    .lykilord
+    {
+    	margin: 0;
+    	font-family: "Lato";
+    	padding-right: 20px;
+    }
+
+    .netfang
+    {
+    	margin: 0;
+    	font-family: "Lato";
+    	padding-right: 20px;
+    }
+
+    .container
+	{
+		width: 27%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.container
+	{
+		width: 45%;
+	}
+
+	h1
+	{
+		font-size: 75
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.container
+	{
+		width: 90%;
+	}
+
+	h1
+	{
+		font-size: 51
+	}
+
+	body
+	{
+		max-width: 400px;
+	}
+}
